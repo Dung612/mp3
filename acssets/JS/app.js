@@ -1,14 +1,14 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-const audio= $('#audio') // get element audio player!
-const progress = $('#progress');// get element input range
-let playing = false; // status 'playing' when first load app
-const loader = $('.loader'); // get element current progress
+const audio= $('#audio') 
+const progress = $('#progress');
+let playing = false; 
+const loader = $('.loader'); 
 const bgContainer = $('.container')
 const bgMain = $('.main-bg')
 
-const curSong = $('.cur-playing') // get element to render current songs
+const curSong = $('.cur-playing') 
 
 //// get element button control
 const playPause = $('.play-pause');
@@ -16,18 +16,18 @@ const btnPlay = $('.btn-play')
 const btnPause = $('.btn-pause')
 const btnNext = $('.next')
 const btnPrev = $('.prev')
-const repeat = $('.repeat')// get element repeat current song
+const repeat = $('.repeat')
 let isRepeat 
-const shuffle = $('.shuffle') //get element random song
+const shuffle = $('.shuffle') 
 let isShuffle
 
-const list = $('.column') // get element to render songs
+const list = $('.column') 
 
 
-const theme = $('.theme-icon') //get element change theme
+const theme = $('.theme-icon') 
 let ramdomMemory = [];
-var listSong ; //get song after render playlist
-var currentSong =0; // index song
+var listSong ; 
+var currentSong =0; 
 
 const hostLink = 'https://raw.githubusercontent.com/NVB07/m3-data/main/acssets/mp3/'
 const apiMusic = 'https://raw.githubusercontent.com/NVB07/m3-data/main/package.json';
@@ -65,7 +65,7 @@ const mainApp = {
         })
         list.innerHTML = htmlsList.join('')
     
-        //get element listsong after render playlist
+     
         listSong = $$('.song')
     },
     
@@ -86,7 +86,7 @@ const mainApp = {
             </div>
             `
 
-        //add class 'now-play' for first song
+      
         
         listSong[currentSong].classList.add('now-play')
     },
