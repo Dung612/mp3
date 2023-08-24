@@ -10,7 +10,7 @@ const bgMain = $('.main-bg')
 
 const curSong = $('.cur-playing') 
 
-//// get element button control
+
 const playPause = $('.play-pause');
 const btnPlay = $('.btn-play')
 const btnPause = $('.btn-pause')
@@ -204,7 +204,7 @@ const generalFunction= {
     },
 }
 
-//handle times
+
 const handleTimes={
     updateTrack: function(){
         audio.ontimeupdate = function () {
